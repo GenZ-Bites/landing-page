@@ -1,4 +1,4 @@
-/* Warna utama sesuai poster */
+/* Warna utama sesuai tema */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,6 +20,7 @@ header {
 header h1 {
     font-size: 24px;
     color: #f8b400;
+    margin: 0;
 }
 
 nav ul {
@@ -37,6 +38,11 @@ nav ul li a {
     text-decoration: none;
     color: #f8b400;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Warna emas lebih terang saat hover */
 }
 
 /* Hero Section */
@@ -47,6 +53,7 @@ nav ul li a {
 
 .hero h2 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .hero p {
@@ -62,21 +69,54 @@ nav ul li a {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffd700;
 }
 
 /* Menu */
 .menu {
-    padding: 50px;
+    padding: 50px 20px;
+}
+
+.menu h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .menu-item {
-    display: inline-block;
-    margin: 20px;
+    background-color: #112240;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
 }
 
 .menu-item img {
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 22px;
+    color: #f8b400;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 
 /* Kontak */
@@ -85,24 +125,18 @@ nav ul li a {
     background-color: #112240;
 }
 
+.contact h2 {
+    font-size: 28px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 footer {
     padding: 20px;
     background-color: #0a192f;
     color: #f8b400;
-}
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-}
-
-.menu img {
-    width: 150px;
-    border-radius: 10px;
-}
-.menu p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff; /* Sesuaikan dengan tema web */
+    font-size: 14px;
 }
